@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
+import OfferReducer from '../views/Offer/store/OfferSlice'
 import FootwearReducer from '../views/Footwear/store/FootwearSlice'
 import CosmeticsReducer from '../views/Cosmetics/store/CosmeticsSlice'
 import { createLogger } from 'redux-logger'
@@ -15,6 +16,7 @@ export default configureStore({
         notification: notificationReducer,
         Cosmetics: CosmeticsReducer,
         Footwear: FootwearReducer,
+        Offer: OfferReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(middlewares),

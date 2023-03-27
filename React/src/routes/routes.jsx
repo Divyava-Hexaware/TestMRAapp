@@ -1,4 +1,5 @@
 import NotFound from 'views/sessions/NotFound'
+import OfferRoutes from 'views/Offer/OfferRoutes'
 import FootwearRoutes from 'views/Footwear/FootwearRoutes'
 import CosmeticsRoutes from 'views/Cosmetics/CosmeticsRoutes'
 import sessionRoutes from 'views/sessions/SessionRoutes'
@@ -9,7 +10,12 @@ export const AllPages = () => {
     const all_routes = [
         {
             element: <MatxLayout />,
-            children: [...homeRoutes, ...CosmeticsRoutes, ...FootwearRoutes],
+            children: [
+                ...homeRoutes,
+                ...CosmeticsRoutes,
+                ...FootwearRoutes,
+                ...OfferRoutes,
+            ],
         },
         ...sessionRoutes,
         {
