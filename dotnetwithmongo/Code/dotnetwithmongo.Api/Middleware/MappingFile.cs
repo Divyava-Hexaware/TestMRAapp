@@ -8,6 +8,7 @@ public class MappingFile : Profile
     public MappingFile()
     {
         // Mapping variables
+		CreateMap<Offer , OfferDto>(); 
 		CreateMap<Footwear , FootwearDto>(); 
 		CreateMap<Cosmetics , CosmeticsDto>(); 
     }

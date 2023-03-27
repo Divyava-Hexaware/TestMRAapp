@@ -14,6 +14,11 @@ export const navigations = [
                 path: '/Footwear',
                 iconText: 'A',
             },
+            {
+                name: 'Offer',
+                path: '/Offer',
+                iconText: 'A',
+            },
         ],
     },
 ]
